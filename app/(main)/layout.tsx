@@ -8,14 +8,14 @@ export default function MainLayout({
 }>) {
   return (
     <div className="w-full min-h-dvh pt-16 sm:pt-20 md:pt-24 lg:pt-32">
-      <nav className="container">
-        <Link href={"/"} className="text-xl font-medium">
-          Axel
-        </Link>
-      </nav>
-      <div className="container mt-1">
-        <h1 className="inline">Full-Stack Developer</h1>
-      </div>
+      <header className="container">
+        <nav>
+          <Link href={"/"} className="text-xl font-medium">
+            Axel
+          </Link>
+        </nav>
+        <h1 className="inline mt-1">Full-Stack Developer</h1>
+      </header>
       <main>{children}</main>
     </div>
   );

@@ -5,7 +5,7 @@ import { Skill } from "./components/Skill";
 export default function Home() {
   return (
     <>
-      <header className="container font-normal mt-8">
+      <section id="about" className="container font-normal mt-8">
         <p className="text-muted-foreground font-normal">
           I work at Ortelius as a backend and infrastructure developer, with
           frontend skills when needed. I've been coding for 8 years. I'm
@@ -15,7 +15,7 @@ export default function Home() {
         <p className="mt-4 text-muted-foreground">
           In my free time, I enjoy music, art, cooking, and video games.
         </p>
-      </header>
+      </section>
       <section id="experience" className="container mt-12 sm:mt-16">
         <h2 className="font-medium">
           <Link href="#experience" className="group relative">
@@ -337,7 +337,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="connect" className="container mt-12 sm:mt-16">
+      <footer id="connect" className="container mt-12 sm:mt-16">
         <h2 className="font-medium">
           <Link href="#connect" className="group relative">
             <span className="absolute flex h-[1lh] items-center px-2 opacity-0 transition-opacity group-hover:opacity-100 max-md:left-full md:right-full">
@@ -348,42 +348,36 @@ export default function Home() {
             Connect
           </Link>
         </h2>
-        <dl className="mt-6 sm:mt-8 grid grid-cols-[auto_1fr] sm:grid-cols-[30%_1fr] md:grid-cols-[25%_1fr] gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-4 border-t border-border-default pt-6 sm:pt-8">
-          <dt className="text-muted-foreground">GitHub</dt>
-          <dd>
-            <a
-              href="https://github.com/AkuseruW"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              @AkuseruW
-            </a>
-          </dd>
+        <address className="mt-6 sm:mt-8 not-italic grid grid-cols-[auto_1fr] sm:grid-cols-[30%_1fr] md:grid-cols-[25%_1fr] gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-4 border-t border-border-default pt-6 sm:pt-8">
+          <span className="text-muted-foreground">GitHub</span>
+          <a
+            href="https://github.com/AkuseruW"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            @AkuseruW
+          </a>
 
-          <dt className="text-muted-foreground">Mail</dt>
-          <dd>
-            <a
-              href="mailto:wolfs.axelw@gmail.com"
-              className="hover:underline break-all sm:break-normal"
-            >
-              wolfs.axelw@gmail.com
-            </a>
-          </dd>
+          <span className="text-muted-foreground">Mail</span>
+          <a
+            href="mailto:wolfs.axelw@gmail.com"
+            className="hover:underline break-all sm:break-normal"
+          >
+            wolfs.axelw@gmail.com
+          </a>
 
-          <dt className="text-muted-foreground">LinkedIn</dt>
-          <dd>
-            <a
-              href="https://www.linkedin.com/in/axel-wolfs-202147175"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline"
-            >
-              @axelwolfs
-            </a>
-          </dd>
-        </dl>
-      </section>
+          <span className="text-muted-foreground">LinkedIn</span>
+          <a
+            href="https://www.linkedin.com/in/axel-wolfs-202147175"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            @axelwolfs
+          </a>
+        </address>
+      </footer>
     </>
   );
 }
