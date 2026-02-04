@@ -7,13 +7,13 @@ export default function Home() {
     <>
       <header className="container font-normal mt-8">
         <p className="text-muted-foreground font-normal">
-          I work at Ortelius as a full-stack developer. I've been coding for 4
-          years. I'm passionate about crafting clean user interfaces and
-          thoughtful user experiences.
+          I work at Ortelius as a backend and infrastructure developer, with
+          frontend skills when needed. I've been coding for 8 years. I'm
+          passionate about building scalable systems and robust cloud
+          infrastructure.
         </p>
         <p className="mt-4 text-muted-foreground">
-          In my free time, I'm learning Korean. I also enjoy combat sports,
-          fitness, music, and fashion.
+          In my free time, I enjoy music, art, cooking, and video games.
         </p>
       </header>
       <section id="experience" className="container mt-12 sm:mt-16">
@@ -40,10 +40,10 @@ export default function Home() {
         <div className="mt-6 sm:mt-8">
           <Company
             name="Ortelius"
-            role="Frontend & Backend Developer"
-            period="Mar 2025 - Present"
-            description="I build full-stack web applications, from AI-powered assistants to scalable multi-tenant systems, focusing on clean architecture and user experience."
-            technologies="React, Node, and Python"
+            role="Backend & Infrastructure Developer"
+            period="Jun 2024 - Present"
+            description="I build backend services and manage cloud infrastructure, from scalable APIs to multi-tenant systems, focusing on reliability and performance."
+            technologies="Node.js, Python, Docker, and AWS"
           />
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function Home() {
               </svg>
             }
             title="React"
-            description="I build user interfaces with Next.js, React Router and Tanstack Start, focusing on component reusability."
+            description="I build user interfaces with Next.js and React Router, focusing on component reusability."
           />
           <Skill
             icon={
@@ -196,7 +196,7 @@ export default function Home() {
               </svg>
             }
             title="Node.js"
-            description="I build backend services and APIs with Node.js, using frameworks like Hono and Adonis."
+            description="I build backend services and APIs with Node.js."
           />
           <div className="border-t border-border-default pt-6 sm:pt-8">
             <Skill
@@ -244,7 +244,7 @@ export default function Home() {
                 </svg>
               }
               title="Python"
-              description="I develop backend systems, AI agents, and modern APIs with Python and FastAPI."
+              description="I develop backend systems, AI agents, and modern APIs with Python."
             />
           </div>
           <div className="border-t border-border-default pt-6 sm:pt-8">
@@ -277,6 +277,64 @@ export default function Home() {
               description="I use GitHub to manage my projects and collaborate with teams on version control."
             />
           </div>
+          <div className="border-t border-border-default pt-6 sm:pt-8">
+            <Skill
+              icon={
+                <svg
+                  height="16"
+                  viewBox="0 0 640 512"
+                  width="20"
+                >
+                  <path
+                    fill="#2496ED"
+                    d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"
+                  />
+                </svg>
+              }
+              title="Docker"
+              description="I containerize applications and manage development environments with Docker and Docker Compose."
+            />
+          </div>
+          <div className="border-t border-border-default pt-6 sm:pt-8">
+            <Skill
+              icon={
+                <svg
+                  height="16"
+                  viewBox="0 0 304 182"
+                  width="26"
+                >
+                  <path
+                    fill="#FF9900"
+                    d="M86.4 66.4c0 3.7.4 6.7 1.1 8.9.8 2.2 1.8 4.6 3.2 7.2.5.8.7 1.6.7 2.3 0 1-.6 2-1.9 3l-6.3 4.2c-.9.6-1.8.9-2.6.9-1 0-2-.5-3-1.4-1.4-1.5-2.6-3.1-3.6-4.7-1-1.7-2-3.6-3.1-5.9-7.8 9.2-17.6 13.8-29.4 13.8-8.4 0-15.1-2.4-20-7.2-4.9-4.8-7.4-11.2-7.4-19.2 0-8.5 3-15.4 9.1-20.6 6.1-5.2 14.2-7.8 24.5-7.8 3.4 0 6.9.3 10.6.8 3.7.5 7.5 1.3 11.5 2.2v-7.3c0-7.6-1.6-12.9-4.7-16-3.2-3.1-8.6-4.6-16.3-4.6-3.5 0-7.1.4-10.8 1.3-3.7.9-7.3 2-10.8 3.4-1.6.7-2.8 1.1-3.5 1.3-.7.2-1.2.3-1.6.3-1.4 0-2.1-1-2.1-3.1v-4.9c0-1.6.2-2.8.7-3.5.5-.7 1.4-1.4 2.8-2.1 3.5-1.8 7.7-3.3 12.6-4.5 4.9-1.3 10.1-1.9 15.6-1.9 11.9 0 20.6 2.7 26.2 8.1 5.5 5.4 8.3 13.6 8.3 24.6v32.4zM45.8 81.6c3.3 0 6.7-.6 10.3-1.8 3.6-1.2 6.8-3.4 9.5-6.4 1.6-1.9 2.8-4 3.4-6.4.6-2.4 1-5.3 1-8.7v-4.2c-2.9-.7-6-1.3-9.2-1.7-3.2-.4-6.3-.6-9.4-.6-6.7 0-11.6 1.3-14.9 4-3.3 2.7-4.9 6.5-4.9 11.5 0 4.7 1.2 8.2 3.7 10.6 2.4 2.5 5.9 3.7 10.5 3.7zm80.3 10.8c-1.8 0-3-.3-3.8-1-.8-.6-1.5-2-2.1-3.9l-23.5-77.3c-.6-2-.9-3.3-.9-4 0-1.6.8-2.5 2.4-2.5h9.8c1.9 0 3.2.3 3.9 1 .8.6 1.4 2 2 3.9l16.8 66.2 15.6-66.2c.5-2 1.1-3.3 1.9-3.9.8-.6 2.2-1 4-1h8c1.9 0 3.2.3 4 1 .8.6 1.5 2 1.9 3.9l15.8 67 17.3-67c.6-2 1.3-3.3 2-3.9.8-.6 2.1-1 3.9-1h9.3c1.6 0 2.5.8 2.5 2.5 0 .5-.1 1-.2 1.6-.1.6-.3 1.4-.7 2.5l-24.1 77.3c-.6 2-1.3 3.3-2.1 3.9-.8.6-2.1 1-3.8 1h-8.6c-1.9 0-3.2-.3-4-1-.8-.7-1.5-2-1.9-4l-15.5-64.5-15.4 64.4c-.5 2-1.1 3.3-1.9 4-.8.7-2.2 1-4 1h-8.6zm128.5 2.7c-5.2 0-10.4-.6-15.4-1.8-5-1.2-8.9-2.5-11.5-4-1.6-.9-2.7-1.9-3.1-2.8-.4-.9-.6-1.9-.6-2.8v-5.1c0-2.1.8-3.1 2.3-3.1.6 0 1.2.1 1.8.3.6.2 1.5.6 2.5 1 3.4 1.5 7.1 2.7 11 3.5 4 .8 7.9 1.2 11.9 1.2 6.3 0 11.2-1.1 14.6-3.3 3.4-2.2 5.2-5.4 5.2-9.5 0-2.8-.9-5.1-2.7-7-1.8-1.9-5.2-3.6-10.1-5.2l-14.5-4.5c-7.3-2.3-12.7-5.7-16-10.2-3.3-4.4-5-9.3-5-14.5 0-4.2.9-7.9 2.7-11.1 1.8-3.2 4.2-6 7.2-8.2 3-2.3 6.4-4 10.4-5.2 4-1.2 8.2-1.7 12.6-1.7 2.2 0 4.5.1 6.7.4 2.3.3 4.4.7 6.5 1.1 2 .5 3.9 1 5.7 1.6 1.8.6 3.2 1.2 4.2 1.8 1.4.8 2.4 1.6 3 2.5.6.8.9 1.9.9 3.3v4.7c0 2.1-.8 3.2-2.3 3.2-.8 0-2.1-.4-3.8-1.2-5.7-2.6-12.1-3.9-19.2-3.9-5.7 0-10.2.9-13.3 2.8-3.1 1.9-4.7 4.8-4.7 8.9 0 2.8 1 5.2 3 7.1 2 1.9 5.7 3.8 11 5.5l14.2 4.5c7.2 2.3 12.4 5.5 15.5 9.6 3.1 4.1 4.6 8.8 4.6 14 0 4.3-.9 8.2-2.6 11.6-1.8 3.4-4.2 6.4-7.3 8.8-3.1 2.5-6.8 4.3-11.1 5.6-4.5 1.4-9.2 2.1-14.3 2.1z"
+                  />
+                  <path
+                    fill="#FF9900"
+                    d="M273.5 143.7c-32.9 24.3-80.7 37.2-121.8 37.2-57.6 0-109.5-21.3-148.7-56.7-3.1-2.8-.3-6.6 3.4-4.4 42.4 24.6 94.7 39.5 148.8 39.5 36.5 0 76.6-7.6 113.5-23.2 5.5-2.5 10.2 3.6 4.8 7.6z"
+                  />
+                  <path
+                    fill="#FF9900"
+                    d="M287.2 128.1c-4.2-5.4-27.8-2.6-38.5-1.3-3.2.4-3.7-2.4-.8-4.5 18.8-13.2 49.7-9.4 53.3-5 3.6 4.5-1 35.4-18.6 50.2-2.7 2.3-5.3 1.1-4.1-1.9 4-9.9 12.9-32.2 8.7-37.5z"
+                  />
+                </svg>
+              }
+              title="AWS"
+              description="I deploy and manage cloud infrastructure on AWS, including EC2, S3, Lambda, and RDS."
+            />
+          </div>
+          <div className="border-t border-border-default pt-6 sm:pt-8">
+            <Skill
+              icon={
+                <img
+                  src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg"
+                  alt="Kubernetes"
+                  width="16"
+                  height="16"
+                />
+              }
+              title="Kubernetes"
+              description="I orchestrate containerized applications with Kubernetes for scalable and resilient deployments."
+            />
+          </div>
         </div>
       </section>
       <section id="connect" className="container mt-12 sm:mt-16">
@@ -294,34 +352,34 @@ export default function Home() {
           <dt className="text-muted-foreground">GitHub</dt>
           <dd>
             <a
-              href="https://github.com/Gb16702"
+              href="https://github.com/AkuseruW"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              @gb16702
+              @AkuseruW
             </a>
           </dd>
 
           <dt className="text-muted-foreground">Mail</dt>
           <dd>
             <a
-              href="mailto:delgeoffrey1@gmail.com"
+              href="mailto:wolfs.axelw@gmail.com"
               className="hover:underline break-all sm:break-normal"
             >
-              delgeoffrey1@gmail.com
+              wolfs.axelw@gmail.com
             </a>
           </dd>
 
           <dt className="text-muted-foreground">LinkedIn</dt>
           <dd>
             <a
-              href="https://www.linkedin.com/in/geoffrey-delhaye-769b29243/"
+              href="https://www.linkedin.com/in/axel-wolfs-202147175"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              @geoffreydelhaye
+              @axelwolfs
             </a>
           </dd>
         </dl>

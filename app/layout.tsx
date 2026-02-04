@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,38 +14,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Geoffrey Delhaye - Software Developer",
+  title: "Axel Wolfs - Full-Stack Developer",
   description:
-    "Frontend & backend developer specializing in React, Node.js, and Python. Building clean user interfaces and scalable systems.",
+    "Full-Stack developer with a focus on backend and infrastructure. Building scalable systems, APIs, and cloud infrastructure.",
   keywords: [
-    "Geoffrey Delhaye",
-    "Software Developer",
-    "Frontend Developer",
+    "Axel Wolfs",
+    "Full-Stack Developer",
     "Backend Developer",
+    "Infrastructure",
+    "DevOps",
     "React",
-    "Next.js",
     "Node.js",
     "Python",
-    "Full Stack",
+    "AWS",
+    "Docker",
+    "Kubernetes",
   ],
-  authors: [{ name: "Geoffrey Delhaye" }],
-  creator: "Geoffrey Delhaye",
+  authors: [{ name: "Axel Wolfs" }],
+  creator: "Axel Wolfs",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://geoffreyd-portfolio.vercel.app",
-    title: "Geoffrey Delhaye - Software Developer",
+    url: "https://axelw.vercel.app",
+    title: "Axel Wolfs - Full-Stack Developer",
     description:
-      "Frontend & backend developer specializing in React, Node.js, and Python. Building clean user interfaces and scalable systems.",
-    siteName: "Geoffrey Delhaye",
+      "Full-Stack developer with a focus on backend and infrastructure. Building scalable systems, APIs, and cloud infrastructure.",
+    siteName: "Axel Wolfs",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Geoffrey Delhaye - Software Developer",
+    title: "Axel Wolfs - Full-Stack Developer",
     description:
-      "Frontend & backend developer specializing in React, Node.js, and Python.",
+      "Full-Stack developer with a focus on backend and infrastructure. Building scalable systems and cloud infrastructure.",
   },
-  metadataBase: new URL("https://geoffreyd-portfolio.vercel.app"),
+  metadataBase: new URL("https://axelw.vercel.app"),
   robots: {
     index: true,
     follow: true,
