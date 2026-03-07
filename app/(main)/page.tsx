@@ -5,60 +5,45 @@ import { Skill } from "./components/Skill";
 export default function Home() {
   return (
     <>
-      <section id="about" className="container font-normal mt-8">
-        <p className="text-muted-foreground font-normal">
+      <section id="about" className="container mt-12 sm:mt-16 fade-up fade-up-3">
+        <div className="flex items-center gap-3 mb-5">
+          <span className="font-mono text-xs text-accent">01</span>
+          <span className="section-label">About</span>
+          <div className="flex-1 h-px bg-border-default" />
+        </div>
+        <p className="text-foreground/80 leading-7">
           I work at Ortelius as a backend and infrastructure developer, with
-          frontend skills when needed. I've been coding for 8 years. I'm
+          frontend skills when needed. I&apos;ve been coding for 8 years. I&apos;m
           passionate about building scalable systems and robust cloud
           infrastructure.
         </p>
-        <p className="mt-4 text-muted-foreground">
+        <p className="mt-4 text-muted-foreground text-sm">
           In my free time, I enjoy music, art, cooking, and video games.
         </p>
       </section>
-      <section id="experience" className="container mt-12 sm:mt-16">
-        <h2 className="font-medium">
-          <Link href="#experience" className="group relative">
-            <span className="absolute flex h-[1lh] items-center px-2 opacity-0 transition-opacity group-hover:opacity-100 max-md:left-full md:right-full">
-              <svg width="1em" height="1em" className="size-4" data-icon="hash">
-                <symbol id="ai:local:hash" viewBox="0 0 24 24">
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 9h16M4 15h16M10 3 8 21m8-18-2 18"
-                  />
-                </symbol>
-                <use href="#ai:local:hash" />
-              </svg>
-            </span>
-            Experience
-          </Link>
-        </h2>
-        <div className="mt-6 sm:mt-8">
-          <Company
-            name="Ortelius"
-            role="Backend & Infrastructure Developer"
-            period="Jun 2024 - Present"
-            description="I build backend services and manage cloud infrastructure, from scalable APIs to multi-tenant systems, focusing on reliability and performance."
-            technologies="Node.js, Python, Docker, and AWS"
-          />
+
+      <section id="experience" className="container mt-16 sm:mt-20 fade-up fade-up-4">
+        <div className="flex items-center gap-3 mb-6 sm:mb-8">
+          <span className="font-mono text-xs text-accent">02</span>
+          <span className="section-label">Experience</span>
+          <div className="flex-1 h-px bg-border-default" />
         </div>
+        <Company
+          name="Ortelius"
+          role="Backend & Infrastructure Developer"
+          period="Jun 2024 - Present"
+          description="I build backend services and manage cloud infrastructure, from scalable APIs to multi-tenant systems, focusing on reliability and performance."
+          technologies="Node.js, Python, Docker, and AWS"
+        />
       </section>
-      <section id="interests" className="container mt-12 sm:mt-16">
-        <h2 className="font-medium mb-6 sm:mb-8">
-          <Link href="#interests" className="group relative">
-            <span className="absolute flex h-[1lh] items-center px-2 opacity-0 transition-opacity group-hover:opacity-100 max-md:left-full md:right-full">
-              <svg width="1em" height="1em" className="size-4" data-icon="hash">
-                <use href="#ai:local:hash" />
-              </svg>
-            </span>
-            Interests
-          </Link>
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 border-t border-border-default pt-6 sm:pt-8">
+
+      <section id="interests" className="container mt-16 sm:mt-20 fade-up fade-up-5">
+        <div className="flex items-center gap-3 mb-6 sm:mb-8">
+          <span className="font-mono text-xs text-accent">03</span>
+          <span className="section-label">Stack</span>
+          <div className="flex-1 h-px bg-border-default" />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <Skill
             icon={
               <svg
@@ -198,185 +183,167 @@ export default function Home() {
             title="Node.js"
             description="I build backend services and APIs with Node.js."
           />
-          <div className="border-t border-border-default pt-6 sm:pt-8">
-            <Skill
-              icon={
-                <svg
-                  data-testid="geist-icon"
-                  height="16"
-                  strokeLinejoin="round"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  style={{ color: "currentcolor" }}
-                >
-                  <path
-                    d="M7.90474 0.00013087C7.24499 0.00316291 6.61494 0.0588153 6.06057 0.15584C4.42745 0.441207 4.13094 1.0385 4.13094 2.14002V3.59479H7.9902V4.07971H4.13094H2.68259C1.56099 4.07971 0.578874 4.7465 0.271682 6.01496C-0.0826597 7.4689 -0.0983767 8.37619 0.271682 9.89434C0.546012 11.0244 1.20115 11.8296 2.32276 11.8296H3.64966V10.0856C3.64966 8.82574 4.75179 7.71441 6.06057 7.71441H9.91533C10.9884 7.71441 11.845 6.84056 11.845 5.77472V2.14002C11.845 1.10556 10.9626 0.328487 9.91533 0.15584C9.25237 0.046687 8.56448 -0.00290121 7.90474 0.00013087ZM5.81768 1.17017C6.21631 1.17017 6.54185 1.49742 6.54185 1.89978C6.54185 2.30072 6.21631 2.62494 5.81768 2.62494C5.41761 2.62494 5.09351 2.30072 5.09351 1.89978C5.09351 1.49742 5.41761 1.17017 5.81768 1.17017Z"
-                    fill="url(#paint0_linear_872_3163)"
-                  />
-                  <path
-                    d="M12.3262 4.07971V5.77472C12.3262 7.08883 11.1997 8.19488 9.91525 8.19488H6.06049C5.0046 8.19488 4.13086 9.0887 4.13086 10.1346V13.7693C4.13086 14.8037 5.04033 15.4122 6.06049 15.709C7.28211 16.0642 8.45359 16.1285 9.91525 15.709C10.8868 15.4307 11.8449 14.8708 11.8449 13.7693V12.3145H7.99012V11.8296H11.8449H13.7745C14.8961 11.8296 15.3141 11.0558 15.7041 9.89434C16.1071 8.69865 16.0899 7.5488 15.7041 6.01495C15.4269 4.91058 14.8975 4.07971 13.7745 4.07971H12.3262ZM10.1581 13.2843C10.5582 13.2843 10.8823 13.6086 10.8823 14.0095C10.8823 14.4119 10.5582 14.7391 10.1581 14.7391C9.7595 14.7391 9.43397 14.4119 9.43397 14.0095C9.43397 13.6086 9.7595 13.2843 10.1581 13.2843Z"
-                    fill="url(#paint1_linear_872_3163)"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_872_3163"
-                      x1="-4.80577e-08"
-                      y1="-4.12903e-08"
-                      x2="8.81665"
-                      y2="7.59598"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#5A9FD4" />
-                      <stop offset="1" stopColor="#306998" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint1_linear_872_3163"
-                      x1="10.0654"
-                      y1="13.8872"
-                      x2="6.91907"
-                      y2="9.42956"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#FFD43B" />
-                      <stop offset="1" stopColor="#FFE873" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              }
-              title="Python"
-              description="I develop backend systems, AI agents, and modern APIs with Python."
-            />
-          </div>
-          <div className="border-t border-border-default pt-6 sm:pt-8">
-            <Skill
-              icon={
-                <svg
-                  data-testid="geist-icon"
-                  height="16"
-                  strokeLinejoin="round"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  style={{ color: "currentcolor" }}
-                >
-                  <g clipPath="url(#clip0_872_3147)">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8 0C3.58 0 0 3.57879 0 7.99729C0 11.5361 2.29 14.5251 5.47 15.5847C5.87 15.6547 6.02 15.4148 6.02 15.2049C6.02 15.0149 6.01 14.3851 6.01 13.7154C4 14.0852 3.48 13.2255 3.32 12.7757C3.23 12.5458 2.84 11.836 2.5 11.6461C2.22 11.4961 1.82 11.1262 2.49 11.1162C3.12 11.1062 3.57 11.696 3.72 11.936C4.44 13.1455 5.59 12.8057 6.05 12.5957C6.12 12.0759 6.33 11.726 6.56 11.5261C4.78 11.3262 2.92 10.6364 2.92 7.57743C2.92 6.70773 3.23 5.98797 3.74 5.42816C3.66 5.22823 3.38 4.40851 3.82 3.30888C3.82 3.30888 4.49 3.09895 6.02 4.1286C6.66 3.94866 7.34 3.85869 8.02 3.85869C8.7 3.85869 9.38 3.94866 10.02 4.1286C11.55 3.08895 12.22 3.30888 12.22 3.30888C12.66 4.40851 12.38 5.22823 12.3 5.42816C12.81 5.98797 13.12 6.69773 13.12 7.57743C13.12 10.6464 11.25 11.3262 9.47 11.5261C9.76 11.776 10.01 12.2558 10.01 13.0056C10.01 14.0752 10 14.9349 10 15.2049C10 15.4148 10.15 15.6647 10.55 15.5847C12.1381 15.0488 13.5182 14.0284 14.4958 12.6673C15.4735 11.3062 15.9996 9.67293 16 7.99729C16 3.57879 12.42 0 8 0Z"
-                      fill="currentColor"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_872_3147">
-                      <rect width="16" height="16" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              }
-              title="GitHub"
-              description="I use GitHub to manage my projects and collaborate with teams on version control."
-            />
-          </div>
-          <div className="border-t border-border-default pt-6 sm:pt-8">
-            <Skill
-              icon={
-                <svg
-                  height="16"
-                  viewBox="0 0 640 512"
-                  width="20"
-                >
-                  <path
-                    fill="#2496ED"
-                    d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"
-                  />
-                </svg>
-              }
-              title="Docker"
-              description="I containerize applications and manage development environments with Docker and Docker Compose."
-            />
-          </div>
-          <div className="border-t border-border-default pt-6 sm:pt-8">
-            <Skill
-              icon={
-                <svg
-                  height="16"
-                  viewBox="0 0 304 182"
-                  width="26"
-                >
-                  <path
-                    fill="#FF9900"
-                    d="M86.4 66.4c0 3.7.4 6.7 1.1 8.9.8 2.2 1.8 4.6 3.2 7.2.5.8.7 1.6.7 2.3 0 1-.6 2-1.9 3l-6.3 4.2c-.9.6-1.8.9-2.6.9-1 0-2-.5-3-1.4-1.4-1.5-2.6-3.1-3.6-4.7-1-1.7-2-3.6-3.1-5.9-7.8 9.2-17.6 13.8-29.4 13.8-8.4 0-15.1-2.4-20-7.2-4.9-4.8-7.4-11.2-7.4-19.2 0-8.5 3-15.4 9.1-20.6 6.1-5.2 14.2-7.8 24.5-7.8 3.4 0 6.9.3 10.6.8 3.7.5 7.5 1.3 11.5 2.2v-7.3c0-7.6-1.6-12.9-4.7-16-3.2-3.1-8.6-4.6-16.3-4.6-3.5 0-7.1.4-10.8 1.3-3.7.9-7.3 2-10.8 3.4-1.6.7-2.8 1.1-3.5 1.3-.7.2-1.2.3-1.6.3-1.4 0-2.1-1-2.1-3.1v-4.9c0-1.6.2-2.8.7-3.5.5-.7 1.4-1.4 2.8-2.1 3.5-1.8 7.7-3.3 12.6-4.5 4.9-1.3 10.1-1.9 15.6-1.9 11.9 0 20.6 2.7 26.2 8.1 5.5 5.4 8.3 13.6 8.3 24.6v32.4zM45.8 81.6c3.3 0 6.7-.6 10.3-1.8 3.6-1.2 6.8-3.4 9.5-6.4 1.6-1.9 2.8-4 3.4-6.4.6-2.4 1-5.3 1-8.7v-4.2c-2.9-.7-6-1.3-9.2-1.7-3.2-.4-6.3-.6-9.4-.6-6.7 0-11.6 1.3-14.9 4-3.3 2.7-4.9 6.5-4.9 11.5 0 4.7 1.2 8.2 3.7 10.6 2.4 2.5 5.9 3.7 10.5 3.7zm80.3 10.8c-1.8 0-3-.3-3.8-1-.8-.6-1.5-2-2.1-3.9l-23.5-77.3c-.6-2-.9-3.3-.9-4 0-1.6.8-2.5 2.4-2.5h9.8c1.9 0 3.2.3 3.9 1 .8.6 1.4 2 2 3.9l16.8 66.2 15.6-66.2c.5-2 1.1-3.3 1.9-3.9.8-.6 2.2-1 4-1h8c1.9 0 3.2.3 4 1 .8.6 1.5 2 1.9 3.9l15.8 67 17.3-67c.6-2 1.3-3.3 2-3.9.8-.6 2.1-1 3.9-1h9.3c1.6 0 2.5.8 2.5 2.5 0 .5-.1 1-.2 1.6-.1.6-.3 1.4-.7 2.5l-24.1 77.3c-.6 2-1.3 3.3-2.1 3.9-.8.6-2.1 1-3.8 1h-8.6c-1.9 0-3.2-.3-4-1-.8-.7-1.5-2-1.9-4l-15.5-64.5-15.4 64.4c-.5 2-1.1 3.3-1.9 4-.8.7-2.2 1-4 1h-8.6zm128.5 2.7c-5.2 0-10.4-.6-15.4-1.8-5-1.2-8.9-2.5-11.5-4-1.6-.9-2.7-1.9-3.1-2.8-.4-.9-.6-1.9-.6-2.8v-5.1c0-2.1.8-3.1 2.3-3.1.6 0 1.2.1 1.8.3.6.2 1.5.6 2.5 1 3.4 1.5 7.1 2.7 11 3.5 4 .8 7.9 1.2 11.9 1.2 6.3 0 11.2-1.1 14.6-3.3 3.4-2.2 5.2-5.4 5.2-9.5 0-2.8-.9-5.1-2.7-7-1.8-1.9-5.2-3.6-10.1-5.2l-14.5-4.5c-7.3-2.3-12.7-5.7-16-10.2-3.3-4.4-5-9.3-5-14.5 0-4.2.9-7.9 2.7-11.1 1.8-3.2 4.2-6 7.2-8.2 3-2.3 6.4-4 10.4-5.2 4-1.2 8.2-1.7 12.6-1.7 2.2 0 4.5.1 6.7.4 2.3.3 4.4.7 6.5 1.1 2 .5 3.9 1 5.7 1.6 1.8.6 3.2 1.2 4.2 1.8 1.4.8 2.4 1.6 3 2.5.6.8.9 1.9.9 3.3v4.7c0 2.1-.8 3.2-2.3 3.2-.8 0-2.1-.4-3.8-1.2-5.7-2.6-12.1-3.9-19.2-3.9-5.7 0-10.2.9-13.3 2.8-3.1 1.9-4.7 4.8-4.7 8.9 0 2.8 1 5.2 3 7.1 2 1.9 5.7 3.8 11 5.5l14.2 4.5c7.2 2.3 12.4 5.5 15.5 9.6 3.1 4.1 4.6 8.8 4.6 14 0 4.3-.9 8.2-2.6 11.6-1.8 3.4-4.2 6.4-7.3 8.8-3.1 2.5-6.8 4.3-11.1 5.6-4.5 1.4-9.2 2.1-14.3 2.1z"
-                  />
-                  <path
-                    fill="#FF9900"
-                    d="M273.5 143.7c-32.9 24.3-80.7 37.2-121.8 37.2-57.6 0-109.5-21.3-148.7-56.7-3.1-2.8-.3-6.6 3.4-4.4 42.4 24.6 94.7 39.5 148.8 39.5 36.5 0 76.6-7.6 113.5-23.2 5.5-2.5 10.2 3.6 4.8 7.6z"
-                  />
-                  <path
-                    fill="#FF9900"
-                    d="M287.2 128.1c-4.2-5.4-27.8-2.6-38.5-1.3-3.2.4-3.7-2.4-.8-4.5 18.8-13.2 49.7-9.4 53.3-5 3.6 4.5-1 35.4-18.6 50.2-2.7 2.3-5.3 1.1-4.1-1.9 4-9.9 12.9-32.2 8.7-37.5z"
-                  />
-                </svg>
-              }
-              title="AWS"
-              description="I deploy and manage cloud infrastructure on AWS, including EC2, S3, Lambda, and RDS."
-            />
-          </div>
-          <div className="border-t border-border-default pt-6 sm:pt-8">
-            <Skill
-              icon={
-                <img
-                  src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg"
-                  alt="Kubernetes"
-                  width="16"
-                  height="16"
+          <Skill
+            icon={
+              <svg
+                data-testid="geist-icon"
+                height="16"
+                strokeLinejoin="round"
+                viewBox="0 0 16 16"
+                width="16"
+                style={{ color: "currentcolor" }}
+              >
+                <path
+                  d="M7.90474 0.00013087C7.24499 0.00316291 6.61494 0.0588153 6.06057 0.15584C4.42745 0.441207 4.13094 1.0385 4.13094 2.14002V3.59479H7.9902V4.07971H4.13094H2.68259C1.56099 4.07971 0.578874 4.7465 0.271682 6.01496C-0.0826597 7.4689 -0.0983767 8.37619 0.271682 9.89434C0.546012 11.0244 1.20115 11.8296 2.32276 11.8296H3.64966V10.0856C3.64966 8.82574 4.75179 7.71441 6.06057 7.71441H9.91533C10.9884 7.71441 11.845 6.84056 11.845 5.77472V2.14002C11.845 1.10556 10.9626 0.328487 9.91533 0.15584C9.25237 0.046687 8.56448 -0.00290121 7.90474 0.00013087ZM5.81768 1.17017C6.21631 1.17017 6.54185 1.49742 6.54185 1.89978C6.54185 2.30072 6.21631 2.62494 5.81768 2.62494C5.41761 2.62494 5.09351 2.30072 5.09351 1.89978C5.09351 1.49742 5.41761 1.17017 5.81768 1.17017Z"
+                  fill="url(#paint0_linear_872_3163)"
                 />
-              }
-              title="Kubernetes"
-              description="I orchestrate containerized applications with Kubernetes for scalable and resilient deployments."
-            />
-          </div>
+                <path
+                  d="M12.3262 4.07971V5.77472C12.3262 7.08883 11.1997 8.19488 9.91525 8.19488H6.06049C5.0046 8.19488 4.13086 9.0887 4.13086 10.1346V13.7693C4.13086 14.8037 5.04033 15.4122 6.06049 15.709C7.28211 16.0642 8.45359 16.1285 9.91525 15.709C10.8868 15.4307 11.8449 14.8708 11.8449 13.7693V12.3145H7.99012V11.8296H11.8449H13.7745C14.8961 11.8296 15.3141 11.0558 15.7041 9.89434C16.1071 8.69865 16.0899 7.5488 15.7041 6.01495C15.4269 4.91058 14.8975 4.07971 13.7745 4.07971H12.3262ZM10.1581 13.2843C10.5582 13.2843 10.8823 13.6086 10.8823 14.0095C10.8823 14.4119 10.5582 14.7391 10.1581 14.7391C9.7595 14.7391 9.43397 14.4119 9.43397 14.0095C9.43397 13.6086 9.7595 13.2843 10.1581 13.2843Z"
+                  fill="url(#paint1_linear_872_3163)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_872_3163"
+                    x1="-4.80577e-08"
+                    y1="-4.12903e-08"
+                    x2="8.81665"
+                    y2="7.59598"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#5A9FD4" />
+                    <stop offset="1" stopColor="#306998" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_872_3163"
+                    x1="10.0654"
+                    y1="13.8872"
+                    x2="6.91907"
+                    y2="9.42956"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#FFD43B" />
+                    <stop offset="1" stopColor="#FFE873" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            }
+            title="Python"
+            description="I develop backend systems, AI agents, and modern APIs with Python."
+          />
+          <Skill
+            icon={
+              <svg
+                data-testid="geist-icon"
+                height="16"
+                strokeLinejoin="round"
+                viewBox="0 0 16 16"
+                width="16"
+                style={{ color: "currentcolor" }}
+              >
+                <g clipPath="url(#clip0_872_3147)">
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M8 0C3.58 0 0 3.57879 0 7.99729C0 11.5361 2.29 14.5251 5.47 15.5847C5.87 15.6547 6.02 15.4148 6.02 15.2049C6.02 15.0149 6.01 14.3851 6.01 13.7154C4 14.0852 3.48 13.2255 3.32 12.7757C3.23 12.5458 2.84 11.836 2.5 11.6461C2.22 11.4961 1.82 11.1262 2.49 11.1162C3.12 11.1062 3.57 11.696 3.72 11.936C4.44 13.1455 5.59 12.8057 6.05 12.5957C6.12 12.0759 6.33 11.726 6.56 11.5261C4.78 11.3262 2.92 10.6364 2.92 7.57743C2.92 6.70773 3.23 5.98797 3.74 5.42816C3.66 5.22823 3.38 4.40851 3.82 3.30888C3.82 3.30888 4.49 3.09895 6.02 4.1286C6.66 3.94866 7.34 3.85869 8.02 3.85869C8.7 3.85869 9.38 3.94866 10.02 4.1286C11.55 3.08895 12.22 3.30888 12.22 3.30888C12.66 4.40851 12.38 5.22823 12.3 5.42816C12.81 5.98797 13.12 6.69773 13.12 7.57743C13.12 10.6464 11.25 11.3262 9.47 11.5261C9.76 11.776 10.01 12.2558 10.01 13.0056C10.01 14.0752 10 14.9349 10 15.2049C10 15.4148 10.15 15.6647 10.55 15.5847C12.1381 15.0488 13.5182 14.0284 14.4958 12.6673C15.4735 11.3062 15.9996 9.67293 16 7.99729C16 3.57879 12.42 0 8 0Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_872_3147">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            }
+            title="GitHub"
+            description="I use GitHub to manage my projects and collaborate with teams on version control."
+          />
+          <Skill
+            icon={
+              <svg
+                height="16"
+                viewBox="0 0 640 512"
+                width="20"
+              >
+                <path
+                  fill="#2496ED"
+                  d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"
+                />
+              </svg>
+            }
+            title="Docker"
+            description="I containerize applications and manage development environments with Docker and Docker Compose."
+          />
+          <Skill
+            icon={
+              <svg
+                height="16"
+                viewBox="0 0 304 182"
+                width="26"
+              >
+                <path
+                  fill="#FF9900"
+                  d="M86.4 66.4c0 3.7.4 6.7 1.1 8.9.8 2.2 1.8 4.6 3.2 7.2.5.8.7 1.6.7 2.3 0 1-.6 2-1.9 3l-6.3 4.2c-.9.6-1.8.9-2.6.9-1 0-2-.5-3-1.4-1.4-1.5-2.6-3.1-3.6-4.7-1-1.7-2-3.6-3.1-5.9-7.8 9.2-17.6 13.8-29.4 13.8-8.4 0-15.1-2.4-20-7.2-4.9-4.8-7.4-11.2-7.4-19.2 0-8.5 3-15.4 9.1-20.6 6.1-5.2 14.2-7.8 24.5-7.8 3.4 0 6.9.3 10.6.8 3.7.5 7.5 1.3 11.5 2.2v-7.3c0-7.6-1.6-12.9-4.7-16-3.2-3.1-8.6-4.6-16.3-4.6-3.5 0-7.1.4-10.8 1.3-3.7.9-7.3 2-10.8 3.4-1.6.7-2.8 1.1-3.5 1.3-.7.2-1.2.3-1.6.3-1.4 0-2.1-1-2.1-3.1v-4.9c0-1.6.2-2.8.7-3.5.5-.7 1.4-1.4 2.8-2.1 3.5-1.8 7.7-3.3 12.6-4.5 4.9-1.3 10.1-1.9 15.6-1.9 11.9 0 20.6 2.7 26.2 8.1 5.5 5.4 8.3 13.6 8.3 24.6v32.4zM45.8 81.6c3.3 0 6.7-.6 10.3-1.8 3.6-1.2 6.8-3.4 9.5-6.4 1.6-1.9 2.8-4 3.4-6.4.6-2.4 1-5.3 1-8.7v-4.2c-2.9-.7-6-1.3-9.2-1.7-3.2-.4-6.3-.6-9.4-.6-6.7 0-11.6 1.3-14.9 4-3.3 2.7-4.9 6.5-4.9 11.5 0 4.7 1.2 8.2 3.7 10.6 2.4 2.5 5.9 3.7 10.5 3.7zm80.3 10.8c-1.8 0-3-.3-3.8-1-.8-.6-1.5-2-2.1-3.9l-23.5-77.3c-.6-2-.9-3.3-.9-4 0-1.6.8-2.5 2.4-2.5h9.8c1.9 0 3.2.3 3.9 1 .8.6 1.4 2 2 3.9l16.8 66.2 15.6-66.2c.5-2 1.1-3.3 1.9-3.9.8-.6 2.2-1 4-1h8c1.9 0 3.2.3 4 1 .8.6 1.5 2 1.9 3.9l15.8 67 17.3-67c.6-2 1.3-3.3 2-3.9.8-.6 2.1-1 3.9-1h9.3c1.6 0 2.5.8 2.5 2.5 0 .5-.1 1-.2 1.6-.1.6-.3 1.4-.7 2.5l-24.1 77.3c-.6 2-1.3 3.3-2.1 3.9-.8.6-2.1 1-3.8 1h-8.6c-1.9 0-3.2-.3-4-1-.8-.7-1.5-2-1.9-4l-15.5-64.5-15.4 64.4c-.5 2-1.1 3.3-1.9 4-.8.7-2.2 1-4 1h-8.6zm128.5 2.7c-5.2 0-10.4-.6-15.4-1.8-5-1.2-8.9-2.5-11.5-4-1.6-.9-2.7-1.9-3.1-2.8-.4-.9-.6-1.9-.6-2.8v-5.1c0-2.1.8-3.1 2.3-3.1.6 0 1.2.1 1.8.3.6.2 1.5.6 2.5 1 3.4 1.5 7.1 2.7 11 3.5 4 .8 7.9 1.2 11.9 1.2 6.3 0 11.2-1.1 14.6-3.3 3.4-2.2 5.2-5.4 5.2-9.5 0-2.8-.9-5.1-2.7-7-1.8-1.9-5.2-3.6-10.1-5.2l-14.5-4.5c-7.3-2.3-12.7-5.7-16-10.2-3.3-4.4-5-9.3-5-14.5 0-4.2.9-7.9 2.7-11.1 1.8-3.2 4.2-6 7.2-8.2 3-2.3 6.4-4 10.4-5.2 4-1.2 8.2-1.7 12.6-1.7 2.2 0 4.5.1 6.7.4 2.3.3 4.4.7 6.5 1.1 2 .5 3.9 1 5.7 1.6 1.8.6 3.2 1.2 4.2 1.8 1.4.8 2.4 1.6 3 2.5.6.8.9 1.9.9 3.3v4.7c0 2.1-.8 3.2-2.3 3.2-.8 0-2.1-.4-3.8-1.2-5.7-2.6-12.1-3.9-19.2-3.9-5.7 0-10.2.9-13.3 2.8-3.1 1.9-4.7 4.8-4.7 8.9 0 2.8 1 5.2 3 7.1 2 1.9 5.7 3.8 11 5.5l14.2 4.5c7.2 2.3 12.4 5.5 15.5 9.6 3.1 4.1 4.6 8.8 4.6 14 0 4.3-.9 8.2-2.6 11.6-1.8 3.4-4.2 6.4-7.3 8.8-3.1 2.5-6.8 4.3-11.1 5.6-4.5 1.4-9.2 2.1-14.3 2.1z"
+                />
+                <path
+                  fill="#FF9900"
+                  d="M273.5 143.7c-32.9 24.3-80.7 37.2-121.8 37.2-57.6 0-109.5-21.3-148.7-56.7-3.1-2.8-.3-6.6 3.4-4.4 42.4 24.6 94.7 39.5 148.8 39.5 36.5 0 76.6-7.6 113.5-23.2 5.5-2.5 10.2 3.6 4.8 7.6z"
+                />
+                <path
+                  fill="#FF9900"
+                  d="M287.2 128.1c-4.2-5.4-27.8-2.6-38.5-1.3-3.2.4-3.7-2.4-.8-4.5 18.8-13.2 49.7-9.4 53.3-5 3.6 4.5-1 35.4-18.6 50.2-2.7 2.3-5.3 1.1-4.1-1.9 4-9.9 12.9-32.2 8.7-37.5z"
+                />
+              </svg>
+            }
+            title="AWS"
+            description="I deploy and manage cloud infrastructure on AWS, including EC2, S3, Lambda, and RDS."
+          />
         </div>
       </section>
-      <footer id="connect" className="container mt-12 sm:mt-16">
-        <h2 className="font-medium">
-          <Link href="#connect" className="group relative">
-            <span className="absolute flex h-[1lh] items-center px-2 opacity-0 transition-opacity group-hover:opacity-100 max-md:left-full md:right-full">
-              <svg width="1em" height="1em" className="size-4" data-icon="hash">
-                <use href="#ai:local:hash" />
-              </svg>
-            </span>
-            Connect
-          </Link>
-        </h2>
-        <address className="mt-6 sm:mt-8 not-italic grid grid-cols-[auto_1fr] sm:grid-cols-[30%_1fr] md:grid-cols-[25%_1fr] gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-4 border-t border-border-default pt-6 sm:pt-8">
-          <span className="text-muted-foreground">GitHub</span>
-          <a
-            href="https://github.com/AkuseruW"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            @AkuseruW
-          </a>
 
-          <span className="text-muted-foreground">Mail</span>
-          <a
-            href="mailto:wolfs.axelw@gmail.com"
-            className="hover:underline break-all sm:break-normal"
-          >
-            wolfs.axelw@gmail.com
-          </a>
-
-          <span className="text-muted-foreground">LinkedIn</span>
-          <a
-            href="https://www.linkedin.com/in/axel-wolfs-202147175"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            @axelwolfs
-          </a>
-        </address>
+      <footer id="connect" className="container mt-16 sm:mt-20 fade-up fade-up-6">
+        <div className="flex items-center gap-3 mb-6 sm:mb-8">
+          <span className="font-mono text-xs text-accent">04</span>
+          <span className="section-label">Contact</span>
+          <div className="flex-1 h-px bg-border-default" />
+        </div>
+        <div className="glass-card p-5 sm:p-6">
+          <address className="not-italic space-y-4">
+            <div className="flex items-center justify-between">
+              <span className="text-muted-foreground text-sm">GitHub</span>
+              <a
+                href="https://github.com/AkuseruW"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium link-underline"
+              >
+                @AkuseruW
+              </a>
+            </div>
+            <div className="h-px bg-border-default" />
+            <div className="flex items-center justify-between">
+              <span className="text-muted-foreground text-sm">Mail</span>
+              <a
+                href="mailto:wolfs.axelw@gmail.com"
+                className="text-sm font-medium link-underline"
+              >
+                wolfs.axelw@gmail.com
+              </a>
+            </div>
+            <div className="h-px bg-border-default" />
+            <div className="flex items-center justify-between">
+              <span className="text-muted-foreground text-sm">LinkedIn</span>
+              <a
+                href="https://www.linkedin.com/in/axel-wolfs-202147175"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium link-underline"
+              >
+                @axelwolfs
+              </a>
+            </div>
+          </address>
+        </div>
       </footer>
     </>
   );

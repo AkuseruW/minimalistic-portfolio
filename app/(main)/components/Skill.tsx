@@ -8,12 +8,14 @@ interface SkillProps {
 
 export function Skill({ icon, title, description }: SkillProps) {
   return (
-    <div>
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-5 h-5 flex items-center justify-center">{icon}</div>
-        <h3 className="text-base font-medium relative -top-[0.5px]">{title}</h3>
+    <div className="glass-card p-4 sm:p-5 group">
+      <div className="flex items-center gap-3 mb-3">
+        <div className="w-8 h-8 rounded-lg bg-foreground/[0.04] flex items-center justify-center group-hover:bg-foreground/[0.07] transition-colors">
+          {icon}
+        </div>
+        <h3 className="text-sm font-semibold tracking-tight">{title}</h3>
       </div>
-      <p className="text-muted-foreground">{description}</p>
+      <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
     </div>
   );
 }
