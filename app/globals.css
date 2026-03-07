@@ -3,8 +3,8 @@
 :root {
     --background: #F7F5F2;
     --foreground: #1C1917;
-    --muted-foreground: #78716C;
-    --accent: #E11D48;
+    --muted-foreground: #655E59;
+    --accent: #BE123C;
     --border-default: rgba(28, 25, 23, 0.08);
     --surface: rgba(255, 255, 255, 0.6);
     --surface-hover: rgba(255, 255, 255, 0.85);

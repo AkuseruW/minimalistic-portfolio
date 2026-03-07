@@ -24,7 +24,7 @@ export function Company({
     <div>
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">
         <div>
-          <h3 className="text-base font-semibold tracking-tight">{name}</h3>
+          <h2 className="text-base font-semibold tracking-tight">{name}</h2>
           <p className="text-muted-foreground text-sm mt-0.5">{role}</p>
         </div>
         <span className="font-mono text-xs text-muted-foreground whitespace-nowrap mt-0.5">

@@ -13,7 +13,7 @@ export function Skill({ icon, title, description }: SkillProps) {
         <div className="w-8 h-8 rounded-lg bg-foreground/[0.04] flex items-center justify-center group-hover:bg-foreground/[0.07] transition-colors">
           {icon}
         </div>
-        <h3 className="text-sm font-semibold tracking-tight">{title}</h3>
+        <h2 className="text-sm font-semibold tracking-tight">{title}</h2>
       </div>
       <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
     </div>
