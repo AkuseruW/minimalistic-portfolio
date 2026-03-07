@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Axel Wolfs - Full-Stack Developer",
+  title: "Axel Wolfs - Full-Stack Developer | Backend & Infrastructure",
   description:
     "Full-Stack developer with a focus on backend and infrastructure. Building scalable systems, APIs, and cloud infrastructure.",
   keywords: [
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://axelw.vercel.app",
-    title: "Axel Wolfs - Full-Stack Developer",
+    title: "Axel Wolfs - Full-Stack Developer | Backend & Infrastructure",
     description:
       "Full-Stack developer with a focus on backend and infrastructure. Building scalable systems, APIs, and cloud infrastructure.",
     siteName: "Axel Wolfs",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Axel Wolfs - Full-Stack Developer",
+    title: "Axel Wolfs - Full-Stack Developer | Backend & Infrastructure",
     description:
       "Full-Stack developer with a focus on backend and infrastructure. Building scalable systems and cloud infrastructure.",
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f0f0f0",
+  themeColor: "#F7F5F2",
 };
 
 export default function RootLayout({

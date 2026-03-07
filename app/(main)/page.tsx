@@ -1,11 +1,11 @@
-import Link from "next/link";
 import { Company } from "./components/Company";
+import { FadeIn, FadeInView } from "./components/FadeIn";
 import { Skill } from "./components/Skill";
 
 export default function Home() {
   return (
     <>
-      <section id="about" className="container mt-12 sm:mt-16 fade-up fade-up-3">
+      <FadeIn as="section" delay={0.2} className="container mt-12 sm:mt-16" id="about">
         <div className="flex items-center gap-3 mb-5">
           <span className="font-mono text-xs text-accent">01</span>
           <span className="section-label">About</span>
@@ -20,9 +20,9 @@ export default function Home() {
         <p className="mt-4 text-muted-foreground text-sm">
           In my free time, I enjoy music, art, cooking, and video games.
         </p>
-      </section>
+      </FadeIn>
 
-      <section id="experience" className="container mt-16 sm:mt-20 fade-up fade-up-4">
+      <FadeInView as="section" className="container mt-16 sm:mt-20" id="experience">
         <div className="flex items-center gap-3 mb-6 sm:mb-8">
           <span className="font-mono text-xs text-accent">02</span>
           <span className="section-label">Experience</span>
@@ -35,15 +35,15 @@ export default function Home() {
           description="I build backend services and manage cloud infrastructure, from scalable APIs to multi-tenant systems, focusing on reliability and performance."
           technologies="Node.js, Python, Docker, and AWS"
         />
-      </section>
+      </FadeInView>
 
-      <section id="interests" className="container mt-16 sm:mt-20 fade-up fade-up-5">
+      <FadeInView as="section" className="container mt-16 sm:mt-20" id="interests">
         <div className="flex items-center gap-3 mb-6 sm:mb-8">
           <span className="font-mono text-xs text-accent">03</span>
           <span className="section-label">Stack</span>
           <div className="flex-1 h-px bg-border-default" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <Skill
             icon={
               <svg
@@ -68,6 +68,7 @@ export default function Home() {
             title="React"
             description="I build user interfaces with Next.js and React Router, focusing on component reusability."
           />
+          <div className="border-t border-border-default pt-6 sm:pt-8 md:border-0 md:pt-0">
           <Skill
             icon={
               <svg
@@ -183,18 +184,20 @@ export default function Home() {
             title="Node.js"
             description="I build backend services and APIs with Node.js."
           />
-          <Skill
-            icon={
-              <svg
-                data-testid="geist-icon"
-                height="16"
-                strokeLinejoin="round"
-                viewBox="0 0 16 16"
-                width="16"
-                style={{ color: "currentcolor" }}
-              >
-                <path
-                  d="M7.90474 0.00013087C7.24499 0.00316291 6.61494 0.0588153 6.06057 0.15584C4.42745 0.441207 4.13094 1.0385 4.13094 2.14002V3.59479H7.9902V4.07971H4.13094H2.68259C1.56099 4.07971 0.578874 4.7465 0.271682 6.01496C-0.0826597 7.4689 -0.0983767 8.37619 0.271682 9.89434C0.546012 11.0244 1.20115 11.8296 2.32276 11.8296H3.64966V10.0856C3.64966 8.82574 4.75179 7.71441 6.06057 7.71441H9.91533C10.9884 7.71441 11.845 6.84056 11.845 5.77472V2.14002C11.845 1.10556 10.9626 0.328487 9.91533 0.15584C9.25237 0.046687 8.56448 -0.00290121 7.90474 0.00013087ZM5.81768 1.17017C6.21631 1.17017 6.54185 1.49742 6.54185 1.89978C6.54185 2.30072 6.21631 2.62494 5.81768 2.62494C5.41761 2.62494 5.09351 2.30072 5.09351 1.89978C5.09351 1.49742 5.41761 1.17017 5.81768 1.17017Z"
+          </div>
+          <div className="border-t border-border-default pt-6 sm:pt-8">
+            <Skill
+              icon={
+                <svg
+                  data-testid="geist-icon"
+                  height="16"
+                  strokeLinejoin="round"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  style={{ color: "currentcolor" }}
+                >
+                  <path
+                    d="M7.90474 0.00013087C7.24499 0.00316291 6.61494 0.0588153 6.06057 0.15584C4.42745 0.441207 4.13094 1.0385 4.13094 2.14002V3.59479H7.9902V4.07971H4.13094H2.68259C1.56099 4.07971 0.578874 4.7465 0.271682 6.01496C-0.0826597 7.4689 -0.0983767 8.37619 0.271682 9.89434C0.546012 11.0244 1.20115 11.8296 2.32276 11.8296H3.64966V10.0856C3.64966 8.82574 4.75179 7.71441 6.06057 7.71441H9.91533C10.9884 7.71441 11.845 6.84056 11.845 5.77472V2.14002C11.845 1.10556 10.9626 0.328487 9.91533 0.15584C9.25237 0.046687 8.56448 -0.00290121 7.90474 0.00013087ZM5.81768 1.17017C6.21631 1.17017 6.54185 1.49742 6.54185 1.89978C6.54185 2.30072 6.21631 2.62494 5.81768 2.62494C5.41761 2.62494 5.09351 2.30072 5.09351 1.89978C5.09351 1.49742 5.41761 1.17017 5.81768 1.17017Z"
                   fill="url(#paint0_linear_872_3163)"
                 />
                 <path
@@ -230,6 +233,8 @@ export default function Home() {
             title="Python"
             description="I develop backend systems, AI agents, and modern APIs with Python."
           />
+          </div>
+          <div className="border-t border-border-default pt-6 sm:pt-8">
           <Skill
             icon={
               <svg
@@ -258,6 +263,8 @@ export default function Home() {
             title="GitHub"
             description="I use GitHub to manage my projects and collaborate with teams on version control."
           />
+          </div>
+          <div className="border-t border-border-default pt-6 sm:pt-8">
           <Skill
             icon={
               <svg
@@ -274,6 +281,8 @@ export default function Home() {
             title="Docker"
             description="I containerize applications and manage development environments with Docker and Docker Compose."
           />
+          </div>
+          <div className="border-t border-border-default pt-6 sm:pt-8">
           <Skill
             icon={
               <svg
@@ -298,16 +307,31 @@ export default function Home() {
             title="AWS"
             description="I deploy and manage cloud infrastructure on AWS, including EC2, S3, Lambda, and RDS."
           />
+          </div>
+          <div className="border-t border-border-default pt-6 sm:pt-8">
+          <Skill
+            icon={
+              <img
+                src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.svg"
+                alt="Kubernetes"
+                width="16"
+                height="16"
+              />
+            }
+            title="Kubernetes"
+            description="I orchestrate containerized applications with Kubernetes for scalable and resilient deployments."
+          />
+          </div>
         </div>
-      </section>
+      </FadeInView>
 
-      <footer id="connect" className="container mt-16 sm:mt-20 fade-up fade-up-6">
+      <FadeInView as="footer" className="container mt-16 sm:mt-20" id="connect">
         <div className="flex items-center gap-3 mb-6 sm:mb-8">
           <span className="font-mono text-xs text-accent">04</span>
           <span className="section-label">Contact</span>
           <div className="flex-1 h-px bg-border-default" />
         </div>
-        <div className="glass-card p-5 sm:p-6">
+        <div className="border-t border-border-default pt-6">
           <address className="not-italic space-y-4">
             <div className="flex items-center justify-between">
               <span className="text-muted-foreground text-sm">GitHub</span>
@@ -344,7 +368,7 @@ export default function Home() {
             </div>
           </address>
         </div>
-      </footer>
+      </FadeInView>
     </>
   );
 }

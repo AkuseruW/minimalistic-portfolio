@@ -21,7 +21,7 @@ export function Company({
   technologies,
 }: CompanyProps) {
   return (
-    <div className="glass-card p-5 sm:p-6">
+    <div>
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-4">
         <div>
           <h3 className="text-base font-semibold tracking-tight">{name}</h3>

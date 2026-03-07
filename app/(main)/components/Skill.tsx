@@ -8,7 +8,7 @@ interface SkillProps {
 
 export function Skill({ icon, title, description }: SkillProps) {
   return (
-    <div className="glass-card p-4 sm:p-5 group">
+    <div className="group">
       <div className="flex items-center gap-3 mb-3">
         <div className="w-8 h-8 rounded-lg bg-foreground/[0.04] flex items-center justify-center group-hover:bg-foreground/[0.07] transition-colors">
           {icon}
