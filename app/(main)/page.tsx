@@ -331,7 +331,7 @@ export default function Home() {
           <span className="section-label">Contact</span>
           <div className="flex-1 h-px bg-border-default" />
         </div>
-        <div className="border-t border-border-default pt-6">
+        <div>
           <address className="not-italic space-y-4">
             <div className="flex items-center justify-between">
               <span className="text-muted-foreground text-sm">GitHub</span>
